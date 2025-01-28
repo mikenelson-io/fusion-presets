@@ -1,4 +1,4 @@
-<img src=/images/fusion.png> # Template repository for Pure Fusion Presets
+<img src=/images/fusion-rings.png> # Template repository for Pure Fusion Presets
 
 The purpose of this is to provide a centralized repository for Preset template files. These files can be shared freely and should be modified to suit the specific workload requirements.
 
