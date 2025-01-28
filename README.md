@@ -8,3 +8,5 @@ These files are contributed by Pure employees, partners, and customers.
 - All files submitted must be in JSON format.
 - None of these files can be sold commercially or be any individual. They are completely open source with no commercial rights granted.
 - Absolurtely no warranty or ghurantees whatsoever are either stated or inferred with these files and neither Pure Storage Incoroporated or any of it's employees will be liable for any damage done by executing these Presets within your environment.
+
+Please refer to the [Code of Conduct](https://github.com/PureStorage-OpenConnect/Code-of-Conduct) for more information.
