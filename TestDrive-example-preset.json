@@ -1,0 +1,94 @@
+{
+  "_comment": "This preset will do the following: Create a new volume fleet named 'fleet1:SQLDevTest' with 2 data volumes and 3 log volumes. 2. The data volumes will be 10GB each and the log volumes will be 5GB each. 3. The data volumes will have hourly snapshots retained for 1 day and the log volumes will have daily snapshots retained for 4 weeks. 4. The data volumes will have a QoS limit of 5000 IOPS and 100MB/s bandwidth. 5. The volume will be placed on the default placement configuration. 6. The volume will have a workload type of MsSQL. 7. The volume will have a workload tag with the key 'deptID' and value '01234'. 8. The volume will have a workload tag with the key 'billingID' and value '{{ parameters.department_id }}'. 9. The volume will have a parameter named 'department_id' with a string type and allowed values of 'Sales' and 'Marketing'. 10. The volume will have a description of 'SQL volumes for DevTest'. 11. The volume will have a context of 'flasharray1'.",
+  "context": {
+    "name": "flasharray1"
+  },
+  "id": "34282973-72de-432a-9585-c953f7a38aa6",
+  "name": "fleet1:SQLDevTest",
+  "description": "SQL volumes for DevTest",
+  "revision": 8,
+  "workload_type": "MsSQL",
+  "parameters": [
+    {
+      "name": "department_id",
+      "type": "string",
+      "metadata": {
+        "description": "Please enter your department ID"
+      },
+      "constraints": {
+        "string": {
+          "allowed_values": ["Sales", "Marketing"]
+        }
+      }
+    }
+  ],
+  "workload_tags": [
+    {
+      "key": "deptID",
+      "value": "01234",
+      "copyable": "true",
+      "namespace": "default"
+    },
+    {
+      "key": "billingID",
+      "value": "{{ parameters.department_id }}",
+      "copyable": "true",
+      "namespace": "default"
+    }
+  ],
+  "placement_configurations": [
+    {
+      "name": "default-placement",
+      "storage_class": {
+        "name": "flasharray-c",
+        "id": "",
+        "resource_type": "storage-classes"
+      },
+      "qos_configurations": ["default-qos"]
+    }
+  ],
+  "volume_configurations": [
+    {
+      "name": "datavol",
+      "count": "2",
+      "provisioned_size": "10737418240",
+      "placement_configurations": ["default-placement"],
+      "snapshot_configurations": ["hourly-retain-1-day"]
+    },
+    {
+      "name": "logvol",
+      "count": "3",
+      "provisioned_size": "5368709120",
+      "placement_configurations": ["default-placement"],
+      "snapshot_configurations": ["daily-retain-4-weeks"]
+    }
+  ],
+  "snapshot_configurations": [
+    {
+      "name": "hourly-retain-1-day",
+      "rules": [
+        {
+          "every": "3600000",
+          "keep_for": "86400000"
+        }
+      ]
+    },
+    {
+      "name": "daily-retain-4-weeks",
+      "rules": [
+        {
+          "every": "86400000",
+          "keep_for": "2419200000",
+          "at": "0"
+        }
+      ]
+    }
+  ],
+  "qos_configurations": [
+    {
+      "name": "default-qos",
+      "iops_limit": "5000",
+      "bandwidth_limit": "104857600"
+    }
+  ]
+}
