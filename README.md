@@ -1,5 +1,3 @@
-<img src=/images/fusion-rings.png width="150" height="150"> 
-
 # Repository for Pure Fusion Presets
 
 The purpose of this is to provide a centralized repository for Pure Fusion Preset templates. These files can be shared freely and should be modified to suit the specific workload requirements.
@@ -23,7 +21,7 @@ purepreset
     }
 ```
 
-## To submit a Presets file:
+## To submit a Preset:
 
 - Prepare your file. ***Remove any sensitive  information from the file***. Add comments for clarity and information.
 
