@@ -1,4 +1,4 @@
-<img src=/images/fusion-rings.png width=150> 
+<img src=/images/fusion-rings.png width="150" height="150"> 
 
 # Repository for Pure Fusion Presets
 
@@ -6,7 +6,8 @@ The purpose of this is to provide a centralized repository for Pure Fusion Prese
 
 These files are contributed by Pure employees, partners, and customers.
 
-## Conditions of submitting files:
+## Guidelines for submitting Presets:
+
 - All files submitted **should be in Presets JSON output format**. To download Presets from an array, follow the instructions in the FlashArray CLI guide for the following CLI command: 
 '''
 purepreset
@@ -22,7 +23,7 @@ purepreset
     }
 ```
 
-**To submit a Presets file:**
+## To submit a Presets file:
 
 - Prepare your file. ***Remove any sensitive  information from the file***. Add comments for clarity and information.
 
@@ -31,7 +32,7 @@ purepreset
 - Pull Requests are automatically submitted for review and your request should be merged soon after submission.
 
 
-**Disclaimer:** 
+## Disclaimer:
 
 Absolutely no warranty or guarantees whatsoever are either stated or inferred with these files, and neither Pure Storage Incoroporated or any of it's employees shall be liable for any potential damage done by executing these Presets within your environment. Consult Pure Support or your Pure Account Team for evaluation and more information.
 
