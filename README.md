@@ -6,8 +6,14 @@ The purpose of this is to provide a centralized repository for Pure Fusion Prese
 
 These files are contributed by Pure employees, partners, and customers.
 
-## Conditions of submitting or downloading files:
-- All files submitted **must be in JSON format**.
+## Conditions of submitting files:
+- All files submitted **should be in Presets JSON output format**. To download Presets from an array, follow the instructions in the FlashArray CLI guide for the following CLI command: 
+'''
+purepreset
+'''
+
+- Please remove any sensitive information from the file before submission.
+
 - **Commenting is highly encouraged!!** Since comments are not natively allowed in the JSON language, please create a custom element in the object called `_comment` as shown in the example below
 ```
     {
