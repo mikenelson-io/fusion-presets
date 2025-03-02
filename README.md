@@ -34,6 +34,6 @@ purepreset
 
 Absolutely no warranty or guarantees whatsoever are either stated or inferred with these files, and neither Pure Storage Incoroporated or any of it's employees shall be liable for any potential damage done by executing these Presets within your environment. Consult Pure Support or your Pure Account Team for evaluation and more information.
 
-It is advised that Presets be tested before full implementation in to a Production environment.put simply, if anything breaks in Production without testing first, it is no one else's fault except your own.
+It is advised that Presets be tested before full implementation in to a Production environment. Put simply, if anything breaks in Production without testing first, it is no one else's fault except your own.
 
 Please refer to the [Code of Conduct](https://github.com/PureStorage-OpenConnect/Code-of-Conduct) for more information.
