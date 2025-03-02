@@ -1,4 +1,7 @@
-# Repository for Pure Fusion Presets
+<p align="center">
+<img src="/images/purefusionrings112x91.jpg" widht="112" height="90">
+<h1>Repository for Pure Fusion Presets</h1>
+</p>
 
 The purpose of this is to provide a centralized repository for Pure Fusion Preset templates. These files can be shared freely and should be modified to suit the specific workload requirements.
 
